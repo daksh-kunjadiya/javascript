@@ -38,7 +38,7 @@ const handleData = (e) => {
         number: document.getElementById("number").value.trim(),
     };
     if (user.grid.length != 4) {
-        alert("GRID should be 4 digits long");
+        alert("GRID must be at least 4 digits");
         return;
     }
     if (
@@ -46,7 +46,7 @@ const handleData = (e) => {
         !["6", "7", "8", "9"].includes(user.number[0])
     ) {
         alert(
-            "Phone number should be at least 10 digits long and start with 6,7,8,9"
+            "Phone number must be at least 10 digits and start with 6,7,8,9"
         );
         return;
     }
