@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="userdata">
+            <input type="text" id="username" placeholder="Username">
+            <input type="email" id="email" placeholder="Email">
+            <input type="number" id="number" placeholder="Phone Number">
+            <input type="password" name="password" id="password" placeholder="Password">
+
+            <fieldset class="gender-selection">
+                <legend>GENDER</legend>
+                <label for="male">MALE</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">FEMALE</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="other">OTHERS</label>
+                <input type="radio" name="gender" id="other" value="other">
+            </fieldset>
+            <select id="city">
+                <option disabled selected>--SELECT CITY--</option>
+                <option value="SURAT">SURAT</option>
+                <option value="AHEMDABAD">AHEMDABAD</option>
+                <option value="RAJKOT">RAJKOT</option>
+                <option value="GANDHINAGAR">GANDHINAGAR</option>
+                <option value="VADODARA">VADODARA</option>
+            </select>
+
+            <input type="submit">
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
