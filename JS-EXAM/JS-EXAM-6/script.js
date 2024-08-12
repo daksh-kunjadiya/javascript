@@ -63,8 +63,8 @@ class Book {
     }
 }
 
-let book1 = new Book("JavaScript", "Joe trribiani", 15, 15, 15);
+let book1 = new Book("JavaScript", "Joe trribiani", 50,50,50);
 
-console.log(book1.buyBook(5));
-console.log(book1.rentBook(5));
-console.log(book1.returnBook(5));
+console.log(book1.buyBook(35));
+console.log(book1.rentBook(10));
+console.log(book1.returnBook(25));
