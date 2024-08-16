@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    color: #fff;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.time {
+    text-align: center;
+}
+
+#time {
+    font-size: 60px;
+}
+
+#ampm {
+    font-size: 20px;
+}
+
+#date {
+    font-size: 20px;
+}
