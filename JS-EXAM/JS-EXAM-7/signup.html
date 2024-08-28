@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .btn {
+        background-color: #2c2c2c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: ease 0.5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .container {
+        background-color: #2c2c2c;
+        width: 400px;
+        padding: 20px;
+        border-radius: 25px;
+        box-shadow: 5px 5px 20px 5px #D3D3D3;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        padding-top: 20px;
+
+    }
+
+    input[type="text"],
+    input[type="url"],
+    input[type="submit"] {
+        margin-bottom: 10px;
+        background-color: #2c2c2c;
+        padding: 8px;
+        margin: 8px 10px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        margin-left: 25%;
+        border-radius: 10px;
+        width: 50%;
+        background-color: #2c2c2c;
+        color: white;
+        border: 2px solid #fff;
+        cursor: pointer;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+</style>
+
+<body>
+    <div class="btn-group">
+        <a href="./index.html"><button class="btn">HOME</button></a>
+        <a href="./add.html"><button class="btn">ADD NEWS</button> </a>
+        <a href="./signup.html"><button class="btn">SIGN UP</button></a>
+    </div>
+    <div class="container">
+        <form id="userdata">
+            <input type="text" id="username" placeholder="username">
+            <input type="url" id="img" placeholder="Product Image URL">
+            <input type="submit">
+        </form>
+    </div>
+    <script src="./signup.js"></script>
+
+</body>
+
+</html>
