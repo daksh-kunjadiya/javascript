@@ -10,7 +10,7 @@ const mapper = (data) => {
         let price = createTag("p", ele.price);
         let title = createTag("h3", ele.title);
         let category = createTag("p", ele.category);
-        let buyBtn = createTag("button");
+        let buyBtn = createTag("button","Buy");
         let div = document.createElement("div");
         div.append(img, title, price, category, buyBtn);
         document.getElementById("productList").append(div);
