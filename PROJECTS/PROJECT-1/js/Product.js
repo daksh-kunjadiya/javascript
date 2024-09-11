@@ -2,15 +2,35 @@ import getValue, { createTag } from "../components/Helper.js";
 import navbar from "../components/Navbar.js";
 document.getElementById("navbar").innerHTML = navbar();
 
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+const isExist = (id) => {
+    let flage = false;
+    cart.map((ele, i) => {
+        if (ele.id == id) {
+            cart[i].sQuantity = cart[i].Quantity + 1
+            flage = true;
+            alert("Quantity Added")
+        }
+    });
+    return flage;
+}
+const handleCart = (ele) => {
+    if (!isExist(ele.id)) {
+        cart.push({ ...ele, quantity: 1 });
+        alert("Added to cart");
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+};
 let products = JSON.parse(localStorage.getItem("products")) || [];
 const mapper = (data) => {
     document.getElementById("productList").innerHTML = "";
     data.map((ele) => {
         let img = createTag("img", ele.img);
         let price = createTag("p", ele.price);
-        let title = createTag("h3", ele.title);
+        let title = createTag("p", ele.title);
         let category = createTag("p", ele.category);
-        let buyBtn = createTag("button","Buy");
+        let buyBtn = createTag("button", "Buy");
+        buyBtn.addEventListener("click", () => handleCart(ele))
         let div = document.createElement("div");
         div.append(img, title, price, category, buyBtn);
         document.getElementById("productList").append(div);
@@ -45,3 +65,10 @@ document
 document
     .getElementById("kids")
     .addEventListener("click", () => handleCategory("kids"));
+const search = (e) => {
+    e.preventDefault();
+    let searchValue = getValue("#search");
+    let temp = products.filter((ele) => ele.title.toLowerCase().includes(searchValue.toLowerCase()));
+    mapper(temp);
+};
+document.getElementById("search-icon").addEventListener("submit", search);

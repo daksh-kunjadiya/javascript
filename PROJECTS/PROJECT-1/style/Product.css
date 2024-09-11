@@ -1,26 +1,54 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #efefef;
 }
 
 #productList {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
+  padding: 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 #productList button {
-    width: 100px;
-    height: 30px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  background-color: #2c2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+#filters {
+  margin: 10px 0 0 10px;
 }
 
 .filterBtn {
-    width: 100px;
-    height: 30px;
+  margin: 0 0 0 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #2c2c2c;
+  color: #fff;
+  border-radius: 10px;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#productList img {
+  border-radius: 10px;
+}
+
+#productList p {
+  margin: 0;
+  font-size: 18px;
+  padding:  0 0 0 10px;
 }

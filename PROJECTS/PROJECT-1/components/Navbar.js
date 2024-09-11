@@ -24,14 +24,14 @@ const navbar = () => {
                             <a class="nav-link" href="/pages/Cart.html">Cart</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex" role="search" id="search-icon">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
                         <button class="btn" type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>    
                         </button>
                     </form>
-                    <a href="/pages/Signup.html" class="mx-3 bg-primary border-0 p-2 rounded-2 text-white btn">Signup</a>
-                    <a href="/pages/Login.html" class="bg-primary border-0 p-2 rounded-2 text-white btn">Login</a>
+                    <a href="/pages/Signup.html" class="mx-3 bg-dark border-0 p-2 rounded-2 text-white btn">Signup</a>
+                    <a href="/pages/Login.html" class="bg-dark border-0 p-2 rounded-2 text-white btn">Login</a>
                 </div>
             </div>
         </nav>

@@ -11,12 +11,11 @@ const handleData = (e) => {
     (ele) => ele.email == user.email && ele.password == user.password
   );
   if (isMatched.length > 0) {
-    alert("Login Successfully");
     localStorage.setItem("username", isMatched[0].username);
     localStorage.setItem("isLogin", true);
     window.location.href = "/index.html";
   } else {
-    alert("Login Failed");
+    alert("Login Failed,Please try again");
   }
 };
 document.querySelector("#UserData").addEventListener("submit", handleData);
