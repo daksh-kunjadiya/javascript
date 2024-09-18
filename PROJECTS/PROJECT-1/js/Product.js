@@ -4,19 +4,19 @@ document.getElementById("navbar").innerHTML = navbar();
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const isExist = (id) => {
-    let flage = false;
+    let flag = false;
     cart.map((ele, i) => {
         if (ele.id == id) {
-            cart[i].sQuantity = cart[i].Quantity + 1
-            flage = true;
-            alert("Quantity Added")
+            cart[i].qty = cart[i].qty + 1;
+            flag = true;
+            alert("Quantity Added");
         }
     });
-    return flage;
-}
+    return flag;
+};
 const handleCart = (ele) => {
     if (!isExist(ele.id)) {
-        cart.push({ ...ele, quantity: 1 });
+        cart.push({ ...ele, qty: 1 });
         alert("Added to cart");
     }
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -26,13 +26,13 @@ const mapper = (data) => {
     document.getElementById("productList").innerHTML = "";
     data.map((ele) => {
         let img = createTag("img", ele.img);
-        let price = createTag("p", ele.price);
-        let title = createTag("p", ele.title);
+        let price = createTag("h2", ele.price);
+        let title = createTag("h4", ele.title);
         let category = createTag("p", ele.category);
         let buyBtn = createTag("button", "Buy");
         buyBtn.addEventListener("click", () => handleCart(ele))
         let div = document.createElement("div");
-        div.append(img, title, price, category, buyBtn);
+        div.append(img, title, price, category, buyBtn);    
         document.getElementById("productList").append(div);
     });
 };
@@ -50,25 +50,12 @@ const handleCategory = (category) => {
     let temp = products.filter((ele) => ele.category == category);
     mapper(temp);
 };
-document
-    .getElementById("lth")
-    .addEventListener("click", () => handleSort("lth"));
-document
-    .getElementById("htl")
-    .addEventListener("click", () => handleSort("htl"));
-document
-    .getElementById("men")
-    .addEventListener("click", () => handleCategory("men"));
-document
-    .getElementById("women")
-    .addEventListener("click", () => handleCategory("women"));
-document
-    .getElementById("kids")
-    .addEventListener("click", () => handleCategory("kids"));
-const search = (e) => {
-    e.preventDefault();
-    let searchValue = getValue("#search");
-    let temp = products.filter((ele) => ele.title.toLowerCase().includes(searchValue.toLowerCase()));
-    mapper(temp);
-};
+document.getElementById("filterSelect").addEventListener("change", (e) => {
+    const value = e.target.value;
+    if (value === "lth" || value === "htl") {
+        handleSort(value);
+    } else {
+        handleCategory(value);
+    }
+});
 document.getElementById("search-icon").addEventListener("submit", search);

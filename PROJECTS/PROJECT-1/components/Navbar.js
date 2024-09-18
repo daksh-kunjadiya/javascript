@@ -27,7 +27,7 @@ const navbar = () => {
                     <form class="d-flex" role="search" id="search-icon">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
                         <button class="btn" type="submit">
-                            <i class="fa-solid fa-magnifying-glass"></i>    
+                            <i class="fa-solid fa-magnifying-glass text-dark"></i>    
                         </button>
                     </form>
                     <a href="/pages/Signup.html" class="mx-3 bg-dark border-0 p-2 rounded-2 text-white btn">Signup</a>

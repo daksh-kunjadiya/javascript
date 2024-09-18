@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
   gap: 30px;
 }
 
@@ -27,28 +28,25 @@ body {
 
 #filters {
   margin: 10px 0 0 10px;
-}
-
-.filterBtn {
-  margin: 0 0 0 20px;
-  width: 100px;
-  height: 30px;
-  background-color: #2c2c2c;
-  color: #fff;
-  border-radius: 10px;
-  transition: transform 0.5s;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-}
+} 
 
 #productList img {
   border-radius: 10px;
 }
-
-#productList p {
-  margin: 0;
-  font-size: 18px;
-  padding:  0 0 0 10px;
+/* Common styling for all products */
+.product-item {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Specific styling for product with id 1 */
+.product-1 {
+  border: 2px solid #ff0000;
+}
+
+/* Specific styling for product with id 2 */
+.product-2 {
+  border: 2px solid #00ff00;
+}
+
