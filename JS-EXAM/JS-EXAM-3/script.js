@@ -1,4 +1,4 @@
-let users = [];
+    let users = [];
 
 const handleDelete = (index) => {
     users.splice(index, 1);
