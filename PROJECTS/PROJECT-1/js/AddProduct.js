@@ -4,7 +4,7 @@ document.getElementById("navbar").innerHTML = navbar();
 
 let isLogin = localStorage.getItem("isLogin") || false;
 if (isLogin == false) {
-    window.location.href = "/pages/login.html";
+    window.location.href = "/PROJECTS/PROJECT-1/pages/Login.html";
 }
 let products = JSON.parse(localStorage.getItem("products")) || [];
 const handleSubmit = (e) => {

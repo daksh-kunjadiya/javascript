@@ -10,6 +10,6 @@ const handleData = (e) => {
   };
   users.push(user);
   localStorage.setItem("users", JSON.stringify(users));
-  window.location.href = "/index.html";
+  window.location.href = "/PROJECTS/PROJECT-1/pages/Login.html";
 };
 document.querySelector("#UserData").addEventListener("submit", handleData);

@@ -26,7 +26,7 @@ const mapper = (data) => {
     document.getElementById("productList").innerHTML = "";
     data.map((ele) => {
         let img = createTag("img", ele.img);
-        let price = createTag("h2", ele.price);
+        let price = createTag("h2", ele.price +" ₹");
         let title = createTag("h4", ele.title);
         let category = createTag("p", ele.category);
         let buyBtn = createTag("button", "Buy");
