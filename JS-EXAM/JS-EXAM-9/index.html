@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #products {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin: 50px 0 0 0;
+        }
+
+        #products div {
+            width: 300px;
+            height: 450px;
+            box-shadow: 1px 1px 10px 1px #a9a9a9;
+            border-radius: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="products"></div>
+</body>
+<script src="./script.js"></script>
+
+</html>
