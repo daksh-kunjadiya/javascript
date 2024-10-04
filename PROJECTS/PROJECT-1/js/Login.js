@@ -13,7 +13,7 @@ const handleData = (e) => {
   if (isMatched.length > 0) {
     localStorage.setItem("username", isMatched[0].username);
     localStorage.setItem("isLogin", true);
-    window.location.href = "/PROJECTS/PROJECT-1/index.html";
+    window.location.href = "/JS-EXAM/JS-FINAL%20EXAM-2/index.html";
   } else {
     alert("Login Failed,Please try again");
   }

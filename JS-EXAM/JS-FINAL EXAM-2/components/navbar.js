@@ -21,6 +21,7 @@ const navbar = () => {
                     <li class="nav-item">
                         <a class="nav-link" href="/JS-EXAM/JS-FINAL EXAM-2/pages/login.html">LOGIN</a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
