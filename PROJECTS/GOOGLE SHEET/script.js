@@ -1,4 +1,4 @@
-let url = "https://script.google.com/macros/s/AKfycbzhh80ItFFOGgrw0FYM0s1sAW8OcjOnrYtdEEQfaDC-6ICdGYy90f-J6nmxpN5m5HnuXQ/exec";
+let url = "https://script.google.com/macros/s/AKfycbyh09FAsFH86UnegonJv1mL1fSygLNzCAQ5PGUKBu0Bkrm2K8T0buLQdWuN-GzWP9ryJA/exec";
 let form = document.querySelector("#UserData");
 
 form.addEventListener("submit", (e) => {
