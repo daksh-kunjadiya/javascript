@@ -4,93 +4,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ACTION</title>
     <link rel="stylesheet" href="/PROJECTS/PROJECT-1/style/Style.css">
 </head>
 
 <body>
-    <div id="navbar"></div>
-    <div class="main">
-        <div class="slide"><img src="/PROJECTS/PROJECT-1/img/banner4.jpeg" alt="Slide 4"></div>
-        <div class="product-categories">
-            <div class="product-categorie">
-                <img src="/PROJECTS/PROJECT-1/img/Edition.jpeg" alt="Edition Tees">
-                <div class="PC-text">
-                    <p>EDITION TEES</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis sint aspernatur aut,
-                        voluptates nesciunt voluptas nemo! Rerum excepturi perferendis aperiam, illum quo, inventore
-                        quasi quae numquam nam, saepe iste.</p>
+    <main class="hero">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container container-fluid">
+                    <p class="text-white fs-1 fw-bold" href="#">Action</p>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse vw-100" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end align-items-center w-100 gap-3">
+                            <li class="nav-item ">
+                                <a class="nav-link text-white" aria-current="page"
+                                    href="/PROJECTS/PROJECT-1/index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">MENU ONE</a></li>
+                                    <li><a class="dropdown-item" href="#">MENU TWO</a></li>
+                                    <li><a class="dropdown-item" href="#">MENU THREE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="/PROJECTS/PROJECT-1/pages/Product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="/PROJECTS/PROJECT-1/pages/AddProduct.html">Add
+                                    Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="/PROJECTS/PROJECT-1/pages/Cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <button class="button rounded-5 fw-bold"><a href="/PROJECTS/PROJECT-1/pages/Signup.html"
+                                        class="text-white">Signup</a></button>
+                            </li>
+                            <button class="button rounded-5 fw-bold"><a href="/PROJECTS/PROJECT-1/pages/Login.html"
+                                    class="text-white">Login</a></button>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <div class="product-categorie">
-                <img src="/PROJECTS/PROJECT-1/img/FlirtyTwirls.jpeg" alt="Flirty Twirls">
-                <div class="PC-text">
-                    <p>FLIRTY TWIRLS</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequuntur alias odio quis,
-                        enim molestiae ipsa sunt consequatur, porro blanditiis reiciendis, libero fugiat recusandae!
-                        Voluptates molestiae non ullam nesciunt consequatur.</p>
+            </nav>
+        </header>
+        <section>
+            <div class="container vh-100 d-flex">
+                <div class="mt-5 pt-5">
+                    <p class="hero-text text-white">New template <br> Fullstack</p>
+                    <p class="text-white">A FREE TEMPLATE BY COLORLIB</p>
+                    <button class="button text-white rounded-5 fw-bold">READ MORE</button>
                 </div>
-            </div>
-            <div class="product-categorie">
-                <img src="/PROJECTS/PROJECT-1/img/Bags.jpeg" alt="Bag Bliss">
-                <div class="PC-text">
-                    <p>BAG BLISS</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi exercitationem maiores, itaque
-                        facere, repudiandae architecto ex est, odit quas sint officiis perspiciatis possimus
-                        reprehenderit obcaecati odio praesentium. Autem, porro voluptatibus.</p>
-                </div>
-            </div>
+        </section>
+    </main>
+    <section class="bg-black d-flex align-items-center" style="height: 510px;">
+        <div class="container w-100 py-5 text-white text-center">
+            <span>DON'T WAIT</span>
+            <p class="hero-text">Event Countdown</p>
+            <p>We are sorry, Event ended!</p>
+            <button class="button text-white rounded-5 fw-bold mt-3">GET STARTED</button>
         </div>
-    </div>
-    <footer>
-        <br>
-        <hr>
-        <br>
-        <div class="footer-info">
-            <div class="footer-text">
-                <p class="bold">NEED HELP?</p>
-                <p class="lite">Delivery</p>
-                <p class="lite">Order Status</p>
-                <p class="lite">Returns </p>
-                <p class="lite">FAQs </p>
-                <p class="lite">Shipping Policy </p>
-                <p class="lite">Return And Cancellation Policy</p>
-                <p class="lite">Contact Us</p>
-            </div>
-            <div class="footer-text">
-                <p class="bold">ABOUT US</p>
-                <p class="lite">Aditya Birla Fashion & Retail Ltd</p>
-                <p class="lite">Find A Store</p>
-                <p class="lite">Terms And Conditions For</p>
-                <p class="lite">Membership Program</p>
-                <p class="lite">Bulk Order</p>
-            </div>
+    </section>
+    <section>
+        <div class="container mt-5">
             <div>
-                <div class="foot-contact"><img src="./img/signupimg.png" alt="" class="">
-                    <p class="bold">JOIN ALLEN SOLLY COMMUNITY</p>
+                <span class="fw-bold">SERVICES</span>
+                <p class="hero-text">Our Services</p>
+            </div>
+            <div class="d-flex gap-3">
+                <div class="col-3 rounded-3">
+                    <i class="fa-solid fa-camera icon mt-5 ms-4"></i>
+                    <p class="mt-3 fw-bold ms-4 fs-5">Photography</p>
+                    <p class="ms-4">Lorem ipsum dolor sit amet <br>
+                        consectetur adipisicing elit. Deleniti <br>
+                        reprehenderit id aliquidblanditiis <br>
+                        quos cum non vitae fugit, ipsa <br>
+                        numquam.
+                    </p>
                 </div>
-                <div class="foot-contact">
-                    <p class="bold">FIND US ON SOCIAL</p>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                <div class="col-3 rounded-3">
+                    <i class="fa-solid fa-gear icon mt-5 ms-4"></i>
+                    <p class="mt-3 fw-bold ms-4 fs-5">Settings</p>
+                    <p class="ms-4">Lorem ipsum dolor sit amet <br>
+                        consectetur adipisicing elit. <br>
+                        Expedita est odit, iste aliquam <br>
+                        quibusdam. Repellendus fuga <br>
+                        eligendi temporibus quam facilis.</p>
+                </div>
+                <div class="col-3 rounded-3">
+                    <i class="fa-regular fa-image icon mt-5 ms-4"></i>
+                    <p class="mt-3 fw-bold ms-4 fs-5">Images</p>
+                    <p class="ms-4">Lorem ipsum, dolor sit amet <br>
+                        consectetur adipisicing elit. Maiores <br>
+                        enim a necessitatibus nulla veritatis <br>
+                        soluta dolorem incidunt doloremque ducimus. Labore.</p>
+                </div>
+                <div class="col-3 rounded-3">
+                    <i class="fa-solid fa-layer-group icon mt-5 ms-4"></i>
+                    <p class="mt-3 fw-bold ms-4 fs-5">Layered</p>
+                    <p class="ms-4">Lorem ipsum dolor sit amet <br>
+                        consectetur adipisicing elit. <br>
+                        Nesciunt iusto eum eligendi, vitae <br>
+                        exercitationem architecto sapiente <br>
+                        ipsa maxime quisquam debitis!
+                    </p>
                 </div>
             </div>
         </div>
-        <hr>
+    </section>
+    <section>
+        <div class="container position-relative" style="margin-top: 10%;">
+            <div class="bg-light box-white mt-5 d-flex align-items-center">
+                <div class="col-6 ps-5">
+                    <span class="fw-bold">WHO WE ARE</span>
+                    <p class="hero-text">About Us</p>
+                    <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. <br>
+                        Inventore velit dolores possimus, et aliquamaliquid quibusdam, <br>
+                        magnam hic recusandae, voluptatibus nihil architecto quo optio <br>
+                        fuga, doloribus solutaeius qui voluptatum?<br>
+
+
+                        Quibusdam, hic. Corporis nisi, non nam totam velit accusantium <br>
+                        maxime, nulla tenetur iure quia ipsumullam tempora, fugit <br>
+                        culpa architecto, esse sequi! Cumque deserunt, delectus <br>
+                        doloremque sapiente repellat non sunt.
+                    </p>
+                    <button class="button rounded-5 fw-bold mt-3">GET STARTED</button>
+                </div>
+                <div class="col-6">
+                    <img src="./img/img-1.jpg" alt="" class="image img-fluid mb-5">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-black pb-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="container text-center mt-5 pt-5">
+                    <span class="fw-bold text-white">PRICES FOR EVERYONE</span>
+                    <p class="hero-text text-white">Pricing</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align gap-5 mt-5">
+                <div class="pricing rounded-3 d-flex justify-content-center align-items-center text-white text-center">
+                    <div class="container">
+                        <p class="fs-3 fw-semibold">Starter</p>
+                        <p>Lorem ipsum dolor sit amet <br>
+                            consectetur adipisicing elit hic <br>
+                            quaerat.</p>
+                        <hr>
+                        <p class="fs-3 fw-bold">$ 49 .99</p>
+                        <button class="pricing-btn rounded-5 mt-3">Buy</button>
+                    </div>
+                </div>
+                <div class="pricing rounded-3 d-flex justify-content-center align-items-center text-white text-center">
+                    <div class="container">
+                        <p class="fs-3 fw-semibold">Basic</p>
+                        <p>Lorem ipsum dolor sit amet <br>
+                            consectetur adipisicing elit hic <br>
+                            quaerat.</p>
+                        <hr>
+                        <p class="fs-3 fw-bold">$ 199 .99</p>
+                        <button class="pricing-btn rounded-5 mt-3">Buy</button>
+                    </div>
+                </div>
+                <div class="pricing rounded-3 d-flex justify-content-center align-items-center text-white text-center">
+                    <div class="container">
+                        <p class="fs-3 fw-semibold">Premium</p>
+                        <p>Lorem ipsum dolor sit amet <br>
+                            consectetur adipisicing elit hic <br>
+                            quaerat.</p>
+                        <hr>
+                        <p class="fs-3 fw-bold">$ 975 .99</p>
+                        <button class="pricing-btn rounded-5 mt-3">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-img">
+            <div class="container pt-5">
+                <span class="fw-bold text-white">FEATURES</span>
+                <p class="hero-text text-white">More Features</p>
+                <span class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit hic quaerat.</span>
+            </div>
+            <div class="text-white d-flex gap-4 justify-content-center  mt-5">
+                <div class="bg-dark features rounded-3 p-4">
+                    <p class="fs-4 fw-semibold">Creative</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                        elit. Expedita est odit, iste aliquamquibusdam. <br>
+                        Repellendus fuga eligendi temporibus quam facilis.</p>
+                </div>
+                <div class="bg-dark features rounded-3 p-4">
+                    <p class="fs-4 fw-semibold">
+                        Design
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                        elit. Expedita est odit, iste aliquamquibusdam. <br>
+                        Repellendus fuga eligendi temporibus quam facilis.</p>
+                </div>
+                <div class="bg-dark features rounded-3 p-4">
+                    <p class="fs-4 fw-semibold">
+                        Development
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                        elit. Expedita est odit, iste aliquamquibusdam. <br>
+                        Repellendus fuga eligendi temporibus quam facilis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-black">
+            <div class="container d-flex justify-content-center gap-4 pt-5 pb-5">
+                <div class="text-white"><img src="./img/img-2.jpg" alt="">
+                    <p class="fs-3 mt-5">Jessica Green</p>
+                    <p class="opacity-50">CEO, Co-Founder</p>
+                    <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit <br>
+                        voluptatibus numquam delectus ab, error ratione, tempore, <br>
+                        illum architecto nam odit repellat ut sit consequatur, libero fuga laudantium <br>
+                        quis unde! Aspernatur blanditiis odio hic magnam totam, laborum et <br>
+                        quas laudantium, recusandae perferendis saepe eum porro ipsam <br>
+                        omnis vel sunt aperiam, accusamus</p>
+                    <button class="button rounded-5 fw-bold mt-3 text-white">READ BIO</button>
+
+                </div>
+                <div class="text-white"><img src="./img/img-3.jpg" alt="">
+                    <p class="fs-3 mt-5">Jon Gold</p>
+                    <p class="opacity-50">CTO, Co-Founder</p>
+                    <p class="opacity-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium <br>
+                        quasi consequatur quaetotam voluptatem aperiam impedit sapiente <br>
+                        rem facilis deserunt laboriosam ab reiciendis quis accusamus, at <br>
+                        vitae illo recusandae doloremque soluta tempore assumenda sit. Hic <br>
+                        rem, error minus, voluptates nam tempora molestias dolore sed <br>
+                        distinctio nihil dolores dolorem asperiores. Ex!</p>
+                    <button class="button rounded-5 fw-bold mt-3 text-white">READ BIO</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mt-5">
+            <div class="container">
+                <div>
+                    <span class="fs-3">Subscribe to Newsletter</span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Qui, exercitationem!</p>
+                    <div class="d-flex gap-5">
+                        <div>
+                            <input type="text" placeholder="Your name" class="input">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your email" class="input">
+                        </div>
+                        <div>
+                            <button type="submit" class=" Subscribe-btn rounded-5">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="d-flex justify-content-center gap-5">
+                <div class="scocial d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-facebook-f"></i></div>
+                <div class="scocial d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-twitter"></i></div>
+                <div class="scocial d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-linkedin-in"></i></div>
+                <div class="scocial d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-instagram"></i></div>
+            </div>
+        </div>
+        <div>
+            <p class="mt-3 text-center">Copyright ©2024 All rights reserved | This template is made
+                with ❤️ by Colorlib</p>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script type="module" src="/PROJECTS/PROJECT-1/js/Script.js"></script>
 
 </html>
